@@ -14,7 +14,7 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: 'myAppId',
+  appId: 'authenticationReactNative',
   masterKey: '', //Add your master key here. Keep it secret!
   serverURL: 'https://parse-backend-react-native.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
